@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Compiled files
+lessons/lesson01-compilition-run/main
