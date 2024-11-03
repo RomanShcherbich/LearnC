@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main()
 {
@@ -7,7 +8,12 @@ int main()
     int age;
 
     printf("Enter your name: ");
-    scanf("%s", name);
+    fgets(name, 100, stdin);
+
+    int newlineIndex = strlen(name) - 1;
+    name[newlineIndex] = '\0'; // remove newline character
+
+    printf("Length of name: %ld\n", strlen(name));
     // validate name size 
     if (strlen(name) < 1)
     {
@@ -24,5 +30,4 @@ int main()
     }
 
     printf("Hello, %s! You are %d years old.\n", name, age);
-
 }
