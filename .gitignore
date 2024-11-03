@@ -52,7 +52,7 @@ Mkfile.old
 dkms.conf
 
 # Compiled files
-lessons/lesson01-compilition-run/main
+lessons/*/exe*
 
 
 # Cross-platform settings
