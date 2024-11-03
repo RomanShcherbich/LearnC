@@ -19,6 +19,11 @@ int main()
     {
         printf("Name is empty. Exiting...\n");
         return 1;
+    } 
+    else if (strlen(name) > 100)
+    {
+        printf("Name is too long. Exiting...\n");
+        return 1;
     }
     printf("Enter your age: ");
     scanf("%d", &age);
