@@ -53,3 +53,7 @@ dkms.conf
 
 # Compiled files
 lessons/lesson01-compilition-run/main
+
+
+# Cross-platform settings
+.vscode/tasks.json
